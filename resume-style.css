@@ -1,0 +1,111 @@
+/*
+  Said Sheck
+  10/01/2021
+  Section: CSE 154  Section AD (Dylan McKone)
+
+  The Following File provides the design rule set my webpage
+  Specifying how my headers should look or how the page should layout, etc
+*/
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+body, main, .resume-items, #my-projects, #relevant-work, #experience-academics, #academics {
+  display: flex;
+}
+
+body, article, main, .resume-items, #relevant-work, #academics {
+  flex-direction: column;
+}
+
+body, article, main, .resume-items, #relevant-work, #experience-academics {
+  justify-content: space-evenly;
+}
+
+header {
+  margin-bottom: 3em;
+}
+
+main, article, .resume-items, #my-projects {
+  align-items: center;
+}
+
+article, a > p, #relevant-skills {
+  text-align: center;
+}
+
+header a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, h3 {
+  color: black;
+}
+
+article p {
+  font-size: 1em;
+}
+
+article img {
+  border-radius: 40%;
+}
+
+article img, .resume-items img {
+  height: 11em;
+  width: 11em;
+}
+
+.resume-items {
+  padding: 1em 1em;
+  margin: 1em;
+  box-shadow: none;
+}
+
+.resume-items:hover {
+  transition: 300ms;
+}
+
+.resume-items h3 {
+  font-size: 2em;
+}
+
+main > h3 {
+  font-size: 3em;
+  font-family: 'Fredoka One', cursive;
+  display: inline;
+}
+
+.resume-items img {
+  border-radius: 10px;
+  width: 13em;
+  padding-bottom: 10px;
+}
+
+#my-projects {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#relevant-skills {
+  margin-bottom: 8em;
+}
+
+#experience-academics {
+  flex-direction: row-reverse;
+  padding: 2em;
+  width: 90%;
+}
+
+#experience-academics p, #experience-academics li, #relevant-skills li {
+  font-size: 1.2em;
+}
+
+#experience-academics li {
+  margin-bottom: 0.8em;
+}

@@ -1,0 +1,117 @@
+<!--
+  ***
+  Said Sheck
+  09.30.2021
+  Section: CSE 154 Section AD (Dylan McKone)
+
+  The following HTML file provides the structure for my "About" page. Where
+  users are able to learn about me as I provide a bit of facts about myself hence the
+  name
+  ***
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Said's About Me</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <h1>Said's About Me</h1>
+        <h2 ><a href="resume-page.html">My-Resume</a></h2>
+      </nav>
+      <section>
+        <p>Welcome to Said's About Me page. I'm a second year student here at the University of
+          Washington Studying Mathematics
+        </p>
+      </section>
+    </header>
+
+    <section id="courses-favorites">
+      <section class="courses-favorite-items">
+        <h2>Classes I'm currently taking</h2>
+        <ul>
+          <li>CSE 154 : Intro to Web Progamming</li>
+          <li>CSE 414 : Intro to Databases</li>
+          <li>Math 207 : Intro to Differiential Equations</li>
+        </ul>
+      </section>
+
+      <section class="courses-favorite-items">
+        <h2>Five of My Favorite Things</h2>
+        <ol>
+          <li><strong>Favorite animal:</strong>
+            <a href="https://en.wikipedia.org/wiki/Cat">Cats</a>
+          </li>
+          <li><strong>Favorite food:</strong>Pizza</li>
+          <li><strong>Favorite TV show:</strong>South Park</li>
+          <li><strong>Favorite hobby:</strong> Playing Soccer or Playing FIFA</li>
+          <li><strong>Favorite Sports Club:</strong>
+            <a href="https://www.liverpoolfc.com">Liverpool FC</a>
+          </li>
+        </ol>
+      </section>
+    </section>
+
+    <section id="bottom-half">
+      <!--
+        ***
+        TODO: Find two images that represent when you're happy and when you're sad (consider
+        Google Image Search) but remember to cite your sources
+        ***
+      -->
+      <section id="image-container">
+        <section class="image-item">
+          <h3>A picture that represents when I'm happy</h3>
+          <!-- image of Liverpool 2020 Premier League Trophy Presentation
+            from getty images
+            https://www.gettyimages.com/search/2/image?family=creative&phrase=liverpool+fc
+          -->
+          <img src="images/liverpool-celebration.png" alt="Liverpool FC Celebrating 2020 Premier League Title">
+          <p>Image selected from Getty images</p>
+        </section>
+        <section class="image-item">
+          <h3>A picture that represents when I'm sad</h3>
+          <!--
+            image of Jose Mourinho making a disgruntled face during a match
+            the following photo was retirved form Getty Images
+            https://www.gettyimages.com/photos/
+            jose-mourinho?family=editorial&assettype=image&phrase=jose%20mourinho&sort=mostpopular
+          -->
+          <img src="images/jose-sad.png" alt="Jose Mourinho making a disheartning face">
+          <p>Image selected from Getty images</p>
+        </section>
+      </section>
+
+      <section id="image-UI">
+        <section id="UI-image-container">
+        </section>
+        <button id="change-image">
+          PlEASE PRESS
+        </button>
+      </section>
+
+      <!--
+        Note: We'll learn about semantic tags more this week, but an article is a good semantic
+        choice here to group the information about a single quote and the author/source. If
+        you want to have multiple quotes, try duplicating this
+        "card UI" structure
+      -->
+      <article>
+        <h3>One of my favorite quotes</h3>
+        <blockquote>
+          <p>
+            Kindness is a mark of faith, and whoever has not Kindness has not faith
+          </p>
+          <footer>Prophet Muhammad (SAW)</footer>
+        </blockquote>
+      </article>
+    </section>
+  </body>
+</html>
